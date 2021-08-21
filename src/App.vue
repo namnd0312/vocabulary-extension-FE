@@ -1,17 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="h-100">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <div class="col-md-12 h-100 d-flex justify-content-center align-items-center">
+          <div class="col-md-6 rounded px-5 py-4 shadow bg-white text-left">
+            <Vocabulary />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Vocabulary from './components/Vocabulary.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Vocabulary
   }
 }
 </script>
@@ -24,5 +31,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.vue-bg {
+  background: #bce5d0;
 }
 </style>
